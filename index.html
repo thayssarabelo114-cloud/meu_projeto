@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços de Beleza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Serviços de Beleza</h1>
+    <h1> Tabela de preços</h1>
+    <p>Escolha seus produtos e serviços favoritos ✨</p>
+     <p>Localização: <a href="https://maps.app.goo.gl/y1N2kYpiUKTuJ9dA9" target="_blank">Clique aqui para ver no Google Maps</a></p>
+  </header>
+
+    <!-- Cílios -->
+   <section class="categoria">
+      <h2>💖 Cílios</h2>
+      <div class="catalogo">
+        <div class="produto">
+          <img src="imagens/cilios1.jpg" alt="Volume Brasileiro">
+          <h3>Volume Brasileiro</h3>
+          <p>Cílios longos, atitude forte.</p>
+          <p class="preco">R$ 90,00</p>
+          <button onclick="adicionarCarrinho('Volume Brasileiro', 90)">Adicionar ao carrinho</button>
+        </div>
+        <div class="produto">
+          <img src="imagens/cilios2.jpg" alt="Volume Russo">
+          <h3>Volume Russo</h3>
+          <p>Volume intenso para um olhar marcante.</p>
+          <p class="preco">R$ 110,00</p>
+          <button onclick="adicionarCarrinho('Volume Russo', 110)">Adicionar ao carrinho</button>
+        </div>
+        <div class="produto">
+          <img src="imagens/cilios3.jpg" alt="2D">
+          <h3>2D</h3>
+          <p>Alongados para um olhar que encanta.</p>
+          <p class="preco">R$ 100,00</p>
+          <button onclick="adicionarCarrinho('2D', 100)">Adicionar ao carrinho</button>
+        </div>
+        <div class="produto">
+          <img src="imagens/cilios4.jpg" alt="Volume Híbrido">
+          <h3>Volume Híbrido</h3>
+          <p>Combinação perfeita entre natural e volume.</p>
+          <p class="preco">R$ 80,00</p>
+          <button onclick="adicionarCarrinho('Volume Híbrido', 80)">Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depilação -->
+    <section class="categoria">
+      <h2>🪞 Depilação</h2>
+      <div class="catalogo">
+        <div class="produto">
+          <img src="imagens/depilacao1.jpg" alt="Perna Completa">
+          <h3>Perna Completa</h3>
+          <p>Depilação completa com cera quente.</p>
+          <p class="preco">R$ 50,00</p>
+          <button onclick="adicionarCarrinho('Depilação Perna Completa', 50)">Adicionar ao carrinho</button>
+        </div>
+        <div class="produto">
+          <img src="imagens/depilacao2.jpg" alt="Buço">
+          <h3>Buço</h3>
+          <p>Remoção de pelos indesejados com precisão.</p>
+          <p class="preco">R$ 15,00</p>
+          <button onclick="adicionarCarrinho('Depilação Buço', 15)">Adicionar ao carrinho</button>
+        </div>
+        <div class="produto">
+          <img src="imagens/depilacao3.jpg" alt="Meia Perna">
+          <h3>Meia Perna</h3>
+          <p>Remoção de pelos indesejados com precisão.</p>
+          <p class="preco">R$ 25,00</p>
+          <button onclick="adicionarCarrinho('Meia Perna', 25)">Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobrancelha -->
+    <section class="categoria">
+      <h2>🌸 Sobrancelha</h2>
+      <div class="catalogo">
+        <div class="produto">
+          <img src="imagens/sobrancelha1.jpg" alt="Design de Sobrancelha">
+          <h3>Design de Sobrancelha</h3>
+          <p>Molde perfeito para o seu rosto.</p>
+          <p class="preco">R$ 20,00</p>
+          <button onclick="adicionarCarrinho('Design de sobrancelha', 20)">Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carrinho -->
+   <aside class="carrinho">
+      <h2>🛒 Carrinho</h2>
+      <div id="itens-carrinho"></div>
+      <p class="total">Total: R$ <span id="total">0</span>,00</p>
+      <button class="finalizar" onclick="finalizarPedido()">Finalizar Pedido</button>
+      <p class="cancelamento">📌 Política de cancelamento: Alterações ou cancelamentos devem ser feitos com 2h de antecedência.</p>
+    </aside>
+  </div>
+<script src="script.js"></script>
+    
